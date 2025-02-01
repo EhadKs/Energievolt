@@ -1,0 +1,17 @@
+<div class="configurator-container">
+    <h2>Ihr individuelles Angebot</h2>
+    <form (ngSubmit)="onSubmit()">
+      <label for="type">Art der Sanierung</label>
+      <select id="type" [(ngModel)]="offer.type" name="type">
+        <option value="solar">Solarenergie</option>
+        <option value="waermepumpe">Wärmepumpe</option>
+        <option value="dach">Dachsanierung</option>
+      </select>
+  
+      <label for="budget">Budget (€)</label>
+      <input type="number" id="budget" [(ngModel)]="offer.budget" name="budget">
+  
+      <button type="submit">Angebot berechnen</button>
+    </form>
+  </div>
+  

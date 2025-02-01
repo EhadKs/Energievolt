@@ -1,0 +1,38 @@
+.configurator-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  select, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0033a0;
+  }
+  
