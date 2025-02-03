@@ -1,6 +1,27 @@
 .footer {
-  background: #040005;
-  color: white;
+  background-color: #222; /* Dunkler Hintergrund */
+  color: #fff; /* Weiße Schrift */
+  padding: 10px 0;
   text-align: center;
-  padding: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center; /* Zentriert den Inhalt */
+  align-items: center;
+  flex-direction: column; /* Vertikale Anordnung */
+  width: 100%;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Elemente untereinander anordnen */
+  align-items: center; /* Horizontale Zentrierung */
+  text-align: center; /* Text zentrieren */
+  width: 100%; /* Volle Breite */
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 5px; /* Abstand zwischen Links und Text */
 }
