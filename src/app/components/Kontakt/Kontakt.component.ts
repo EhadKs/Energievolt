@@ -1,19 +1,18 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  standalone: true,  // ✅ Wichtige Standalone-Komponente
+  imports: [FormsModule],  // ✅ FormsModule für ngModel hinzufügen
+  templateUrl: './kontakt.component.html',
+  styleUrls: ['./kontakt.component.scss']
 })
-export class ContactComponent {
-  contactForm = {
-    name: '',
-    email: '',
-    message: ''
-  };
+export class KontaktComponent {
+  contactForm = { name: '', email: '', message: '' };
 
   onSubmit() {
-    console.log('Formulardaten:', this.contactForm);
-    alert('Nachricht erfolgreich gesendet!');
+    console.log('Nachricht gesendet:', this.contactForm);
+    alert(`Danke für deine Nachricht, ${this.contactForm.name}!`);
   }
 }

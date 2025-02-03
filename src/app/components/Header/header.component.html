@@ -1,8 +1,27 @@
-<header class="header">
-    <div class="overlay">
-      <h1>Gestalte deine Zukunft</h1>
-      <p>Nimm mit uns Kontakt auf, um professionelle Beratung zu bekommen</p>
-      <button class="btn">Kontakt</button>
+<header class="navbar">
+    <div class="logo">
+        <img src="assets/image/Logo.jpg" alt="Logo">
     </div>
-  </header>
-  
+    
+    <nav class="nav-links">
+        <a routerLink="/">Startseite</a>
+        <a routerLink="/leistungen">Leistungen</a>
+
+        <!-- Dropdown für Energetische Sanierungen -->
+        <div class="dropdown">
+            <a class="dropbtn">Energetische Sanierungen ▼</a>
+            <div class="dropdown-content">
+                <a routerLink="/sanierungen/dach">Dachsanierung</a>
+                <a routerLink="/sanierungen/fassade">Fassadensanierung</a>
+                <a routerLink="/sanierungen/fenster">Fensteraustausch</a>
+            </div>
+        </div>
+
+        <a routerLink="/about">Über uns</a>
+        <a routerLink="/contact">Kontakt</a>
+    </nav>
+
+    <div class="cta">
+        <button class="cta-button">Angebot anfordern</button>
+    </div>
+</header>

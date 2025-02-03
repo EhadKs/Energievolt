@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-configurator',
-  templateUrl: './configurator.component.html',
-  styleUrls: ['./configurator.component.scss']
+  templateUrl: './Konfigurator.component.html',
+  styleUrls: ['./Konfigurator.component.css']
 })
 export class ConfiguratorComponent {
   offer = {

@@ -1,16 +1,15 @@
 <div class="contact-container">
-    <h2>Kontaktiere uns</h2>
-    <form (ngSubmit)="onSubmit()">
-      <label for="name">Name</label>
-      <input type="text" id="name" [(ngModel)]="contactForm.name" name="name" required>
-  
-      <label for="email">E-Mail</label>
-      <input type="email" id="email" [(ngModel)]="contactForm.email" name="email" required>
-  
-      <label for="message">Nachricht</label>
-      <textarea id="message" [(ngModel)]="contactForm.message" name="message" required></textarea>
-  
-      <button type="submit">Senden</button>
-    </form>
-  </div>
-  
+  <h2>Kontaktiere uns</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label for="name">Name</label>
+    <input type="text" id="name" [(ngModel)]="contactForm.name" name="name" required>
+
+    <label for="email">E-Mail</label>
+    <input type="email" id="email" [(ngModel)]="contactForm.email" name="email" required>
+
+    <label for="message">Nachricht</label>
+    <textarea id="message" [(ngModel)]="contactForm.message" name="message" required></textarea>
+
+    <button type="submit">Senden</button>
+  </form>
+</div>

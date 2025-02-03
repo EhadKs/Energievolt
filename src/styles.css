@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* ✅ Stellt sicher, dass die gesamte Seite die volle Breite nutzt */
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #260633;
+    padding: 15px 20px;
+    color: white;
+    position: sticky;
+}
+
+/* Navbar-Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Dropdown-Menü */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown-Inhalt */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Dropdown-Elemente */
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Dropdown beim Hover anzeigen */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styling für die Links im Dropdown */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Angebot anfordern Button */
+.cta-button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
