@@ -4,7 +4,7 @@ body, html {
     padding: 0;
     width: 100vw; /* ✅ Stellt sicher, dass die gesamte Seite die volle Breite nutzt */
     overflow-x: hidden; /* Verhindert horizontales Scrollen */
-    background-color: rgb(248, 247, 248);
+    background-color: #3c0961;
     overflow-x: hidden;
 }
 /* Navbar */
@@ -13,69 +13,104 @@ body, html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px; /* Höhe des Headers */
-    background-color: rgb(250, 250, 250);
+    height: 80px; /* Etwas größer für ein modernes Gefühl */
+    background: linear-gradient(135deg, #750cc0, #2e054b); /* Lila Verlauf */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Etwas Platz links und rechts */
+    padding: 0 40px; /* Mehr Platz für eine bessere Struktur */
     z-index: 1000;
-  }
-  
-  /* Logo */
-  .logo img {
-    height: 50px; /* Logo kleiner machen */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+    height: 60px; /* Größeres Logo */
     width: auto;
-    margin-left: 10px;
-  }
-  
-  /* Nav Links */
-  .nav-links {
+    margin-left: 20px;
+}
+
+/* Nav Links */
+.nav-links {
     display: flex;
-    align-items: center; /* Alle Links vertikal ausrichten */
-    gap: 30px; /* Abstand zwischen Links */
-  }
-  
-  .nav-links a {
-    color: rgb(7, 0, 0);
+    align-items: center;
+    gap: 30px; /* Mehr Abstand */
+}
+
+/* Navigationselemente */
+.nav-links a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px; /* Einheitliche Größe */
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: yellow; /* Hover Effekt */
-  }
-  
-  /* Dropdown Menü */
-  .dropdown {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Transparente Hover-Effekte */
+    color: #FFC107; /* Goldgelb für Hover */
+}
+
+/* Dropdown Menü */
+.dropdown {
     position: relative;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    top: 100%; /* Direkt unter dem Hauptmenü */
-  }
-  
-  .dropdown:hover .dropdown-content {
+    background: white;
+    min-width: 220px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+}
+
+/* Dropdown Hover */
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  
-  /* Angebot anfordern Button */
-  .cta-button {
-    background-color: yellow;
+}
+
+.dropdown-content a {
     color: black;
-    border: none;
-    padding: 10px 15px;
+    padding: 12px 15px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: #f2f2f2;
+}
+
+/* Angebot anfordern Button */
+.cta-button {
+    background: #04055e;
+    color: #fefdff;
+    padding: 12px 20px;
+    border-radius: 30px;
     font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    
+    /* Wichtig: Entferne margin-right und positioniere ihn richtig */
+    margin-left: auto; 
+    margin-right: 20px; /* Abstand zur rechten Seite */
+    display: flex; 
+    align-items: center;
+    justify-content: center
+    max-width: 150px
+}
+
+.cta-button:hover {
+    background: #21074b;
+    transform: scale(1.05);
+}
+
   
-  
+    
