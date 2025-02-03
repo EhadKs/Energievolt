@@ -4,6 +4,7 @@ body, html {
     padding: 0;
     width: 100vw; /* ✅ Stellt sicher, dass die gesamte Seite die volle Breite nutzt */
     overflow-x: hidden; /* Verhindert horizontales Scrollen */
+    background-color: rgb(43, 7, 73);
 }
 
 /* Navbar */
@@ -11,12 +12,17 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #260633;
+    background-color: #f9f8fa;
     padding: 15px 20px;
-    color: white;
+    color: black;
     position: sticky;
 }
-
+img {
+    width: 150px;
+    height: auto;
+    display: block;
+  }
+  
 /* Navbar-Links */
 .nav-links {
     display: flex;
@@ -24,7 +30,7 @@ body, html {
 }
 
 .nav-links a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     padding: 10px;

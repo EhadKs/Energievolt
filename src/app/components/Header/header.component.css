@@ -1,18 +1,12 @@
 /* Navbar */
-/* Sticky Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #fdfdfd;
   padding: 15px 20px;
   color: white;
-  position: sticky;  /* Sticky statt fixed */
-  top: 0;           /* Bleibt am oberen Rand */
-  width: 100%;      /* Volle Breite */
-  z-index: 1000;    /* Immer über anderen Elementen */
 }
-
 
 /* Navbar-Links */
 .nav-links {
@@ -71,4 +65,9 @@
   cursor: pointer;
   font-weight: bold;
   border-radius: 5px;
+}
+img {
+  width: 150px;
+  height: auto;
+  display: block;
 }
