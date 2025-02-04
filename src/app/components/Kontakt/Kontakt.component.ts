@@ -13,6 +13,5 @@ export class KontaktComponent {
 
   onSubmit() {
     console.log('Nachricht gesendet:', this.contactForm);
-    alert(`Danke für deine Nachricht, ${this.contactForm.name}!`);
   }
-}
+} 

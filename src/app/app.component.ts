@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './Components/header/header.component';
-import { FooterComponent } from './Components/footer/footer.component';
+import { HeaderComponent } from './components/Header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +12,6 @@ import { FooterComponent } from './Components/footer/footer.component';
     <router-outlet></router-outlet>  <!-- ✅ Inhalte hier laden -->
     <app-footer></app-footer>  <!-- ✅ Footer unten -->
   `,
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent { }

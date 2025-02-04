@@ -1,15 +1,57 @@
 <div class="contact-container">
-  <h2>Kontaktiere uns</h2>
-  <form (ngSubmit)="onSubmit()">
-    <label for="name">Name</label>
-    <input type="text" id="name" [(ngModel)]="contactForm.name" name="name" required>
+  <div class="contact-header">
+    <img src="/assets/Image/Kontakt.png" alt="Kontakt Bild">
+</div>
 
-    <label for="email">E-Mail</label>
-    <input type="email" id="email" [(ngModel)]="contactForm.email" name="email" required>
+  <div class="contact-subtext">
+    <h1 class="contact-title">Sie haben <span class="highlight">Fragen</span>, wir die Antwort</h1>
+      Gerne beantworten wir Ihnen jegliche Art von Fragen und freuen uns auf Ihr Feedback.
+  </div>
 
-    <label for="message">Nachricht</label>
-    <textarea id="message" [(ngModel)]="contactForm.message" name="message" required></textarea>
+  <div class="contact-content">
+      <!-- Linke Seite: Kontaktinformationen -->
+      <div class="contact-info">
+          <div class="info-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                  <h4>Unser Büro</h4>
+                  <p>Siemensstraße 20<br>85521 Ottobrunn, Deutschland</p>
+              </div>
+          </div>
 
-    <button type="submit">Senden</button>
-  </form>
+          <div class="info-box">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                  <h4>Telefon</h4>
+                  <p class="phone-number">+49 89 12345678</p>
+              </div>
+          </div>
+
+          <div class="info-box">
+              <i class="fas fa-envelope"></i>
+              <div>
+                  <h4>E-Mail</h4>
+                  <p class="email"><a href="mailto:info@energievolt.de">info&#64;energievolt.de</a></p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Rechte Seite: Kontaktformular -->
+      <div class="contact-form">
+          <h2><i class="fas fa-envelope"></i> Kontaktformular</h2>
+          <form>
+              <input type="text" placeholder="Ihr Name*" required>
+              <input type="email" placeholder="Ihre E-Mail*" required>
+              <textarea placeholder="Ihre Nachricht" required></textarea>
+
+              <div class="checkbox-container">
+                <input type="checkbox" id="privacy">
+                <label for="privacy">Ich akzeptiere die <a href="#">Datenschutzerklärung</a></label>
+            </div>
+            
+
+              <button type="submit"><i class="fas fa-paper-plane"></i> Nachricht senden</button>
+          </form>
+      </div>
+  </div>
 </div>
