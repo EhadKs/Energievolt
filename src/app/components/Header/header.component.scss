@@ -76,7 +76,7 @@
 
 /* Angebot anfordern Button */
 .cta-button {
-  background-color: yellow;
+  background-color: rgb(115, 46, 226);
   color: black;
   border: none;
   padding: 12px 18px;
@@ -84,4 +84,6 @@
   font-weight: bold;
   border-radius: 5px;
   margin-right: 20px; /* Abstand zum rechten Rand */
+
+    right: 50px;
 }

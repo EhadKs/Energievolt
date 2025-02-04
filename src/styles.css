@@ -4,9 +4,9 @@ body, html {
     padding: 0;
     width: 100vw; /* ✅ Stellt sicher, dass die gesamte Seite die volle Breite nutzt */
     overflow-x: hidden; /* Verhindert horizontales Scrollen */
-    
+    color: white;
   
-        background: linear-gradient(135deg, #04010f, #150829, #2d114f);   
+        background: white;
     }
     
 /* Navbar */
@@ -133,7 +133,9 @@ body, html {
     padding-top: 100px; /* Abstand zum Header */
     
 }
-
+.contact-form{
+    color: #200268;
+}
 .contact-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -147,7 +149,7 @@ body, html {
 .contact-subtext {
     font-size: 1.2rem;
     margin-bottom: 40px;
-    color: white;
+    color: black;
 }
 
 .contact-content {
@@ -160,7 +162,7 @@ body, html {
 .contact-info {
     flex: 1;
     text-align: left;
-    color: white;
+    color: #200268;
 }
 
 .info-box {
@@ -178,7 +180,7 @@ body, html {
 .phone-number,
 .email a {
     font-weight: bold;
-    color: white;
+    color: #200268;
     text-decoration: none;
 }
 
@@ -207,7 +209,7 @@ body, html {
     width: 100%;
     padding: 12px;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #200268;
     font-size: 1rem;
 }
 
@@ -245,6 +247,6 @@ body, html {
 }
 
 .contact-form button:hover {
-    background: #380c55;
+    background:  #380c55;
 }
 

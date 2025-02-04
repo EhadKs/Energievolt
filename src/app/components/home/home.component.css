@@ -89,45 +89,15 @@
     margin-top: 300px; /* Hier weiter erhöhen, falls noch weiter runter */
     position: relative;
     z-index: 2;
-  }
+    filter: hue-rotate(240deg) saturate(200%);
+      margin-bottom: 80px; /* Mehr Abstand zum Footer */
   
-  .steps {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 220px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px; /* Falls noch mehr Abstand zu den Bildern benötigt wird */
   }
   
   
-  .step img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
-  }
   
   
-
-.step h3 {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-.step p {
-    font-size: 0.9rem;
-    color: #333;
-}
-
+  
+  
+  
+  
