@@ -15,6 +15,8 @@
   width: auto;  /* Beibehaltung des Seitenverhältnisses */
   margin-left: 20px; /* Abstand vom linken Rand */
   display: block;
+  filter: hue-rotate(240deg) saturate(200%);
+  
 }
 
 /* Navigationslinks */

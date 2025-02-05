@@ -1,0 +1,75 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #3a007d; /* Lila Schriftfarbe */
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+}
+
+.about-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-mission, .about-values {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.values-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.value-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.value-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+h1, h2, h3 {
+    color: #3a007d;
+}
+
+@media (max-width: 768px) {
+    .about-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        padding-right: 0;
+    }
+}

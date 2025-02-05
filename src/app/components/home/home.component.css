@@ -1,103 +1,95 @@
 .hero {
-    width: 100%;
-    height: 100vh; /* Hero-Bild nimmt volle Bildschirmhöhe ein */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .hero img {
-    width: 100%;
-    height: 900px;
-    object-fit: cover; /* Sorgt dafür, dass das Bild immer gut aussieht */
-    display: block;
-  }
-  .service-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    position: absolute;
-    width: 100%;
-    top: 110%;  /* Erhöhe den Wert, damit die Bilder weiter nach unten wandern */
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  
-  
-  .service-card {
-    width: 23%; /* Anpassung der Breite */
-    max-width: 350px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-  }
-  
-  .service-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    object-fit: cover;
-  }
-  
-  
-  /* Text-Effekt nur beim Hover */
-  .service-card .service-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  /* Hover-Effekt */
-  .service-card:hover .service-info {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .service-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
-  }
+  width: 100%;
+  height: 100vh; /* Hero-Bild nimmt volle Bildschirmhöhe ein */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-  .service-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 100px; /* Fügt Platz für den nächsten Abschnitt hinzu */
+.hero img {
+  width: 100%;
+  height: 850px;
+  object-fit: cover; /* Sorgt dafür, dass das Bild immer gut aussieht */
+  display: block;
+}
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  top: 110%;  /* Erhöhe den Wert, damit die Bilder weiter nach unten wandern */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.service-card {
+  width: 23%; /* Anpassung der Breite */
+  max-width: 350px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+
+/* Text-Effekt nur beim Hover */
+.service-card .service-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover-Effekt */
+.service-card:hover .service-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 100px; /* Fügt Platz für den nächsten Abschnitt hinzu */
 }
 
 .steps-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 300px; /* Hier weiter erhöhen, falls noch weiter runter */
-    position: relative;
-    z-index: 2;
-    filter: hue-rotate(240deg) saturate(200%);
-      margin-bottom: 80px; /* Mehr Abstand zum Footer */
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 300px; /* Hier weiter erhöhen, falls noch weiter runter */
+  position: relative;
+  z-index: 2;
+  filter: hue-rotate(240deg) saturate(200%);
+    margin-bottom: 80px; /* Mehr Abstand zum Footer */
+
+}
