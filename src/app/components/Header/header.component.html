@@ -4,22 +4,21 @@
     </div>
     
     <nav class="nav-links">
-        <a routerLink="/">Startseite</a>
-        <a routerLink="/Leistungen">Leistungen</a>
-       
+        <a href="/" routerLinkActive="active">Startseite</a>
+        <a href="/Leistungen" routerLinkActive="active">Leistungen</a>
 
         <!-- Dropdown für Energetische Sanierungen -->
         <div class="dropdown">
             <a class="dropbtn">Energetische Sanierungen ▼</a>
             <div class="dropdown-content">
-                <a routerLink="/sanierungen/Dachsanierung">Dachsanierung</a>
-                <a routerLink="/sanierungen/Wärmepumpe">Wärmepumpe</a>
-                <a routerLink="/sanierungen/Photovoltaik">Photovoltaik</a>
+                <a href="/sanierungen/Dachsanierung" routerLinkActive="active">Dachsanierung</a>
+                <a href="/sanierungen/Wärmepumpe" routerLinkActive="active">Wärmepumpe</a>
+                <a href="/sanierungen/Photovoltaik" routerLinkActive="active">Photovoltaik</a>
             </div>
         </div>
 
-        <a routerLink="/about">Über uns</a>
-        <a routerLink="/Kontakt">Kontakt</a>
+        <a href="/about" routerLinkActive="active">Über uns</a>
+        <a href="/kontakt" routerLinkActive="active">Kontakt</a>
     </nav>
 
     <div class="cta">

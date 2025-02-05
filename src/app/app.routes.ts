@@ -4,6 +4,8 @@ import { HomeComponent } from './components/home/home.component';
 import { LeistungenComponent } from './components/Leistungen/leistungen.component';
 import { KontaktComponent } from './components/Kontakt/Kontakt.component';
 import { AboutComponent } from './components/about/about.component';
+import { ImpressumComponent } from './components/impressum/impressum.component';
+import { DatenschutzComponent } from './components/datenschutz/datenschutz.component';
 
 
 export const routes: Routes = [
@@ -11,6 +13,9 @@ export const routes: Routes = [
   { path: 'Leistungen', component: LeistungenComponent},
   { path: 'kontakt', component: KontaktComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'impressum', component: ImpressumComponent },
+  { path: 'datenschutz', component: DatenschutzComponent },
+  
   
 ];
 

@@ -36,12 +36,12 @@ body, html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px; /* Etwas größer für ein modernes Gefühl */
+    height: 80px; 
     background: linear-gradient(135deg, #750cc0, #2e054b); /* Lila Verlauf */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px; /* Mehr Platz für eine bessere Struktur */
+    padding: 0 40px; 
     z-index: 1000;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }

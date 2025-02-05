@@ -3,33 +3,7 @@
 
 
 
-<header class="navbar">
-    <div class="logo">
-        <img src="/assets/Image/Logo.jpg" alt="Logo">
-    </div>
-    
-    <nav class="nav-links">
-        <a routerLink="/">Startseite</a>
-        <a routerLink="/Leistungen">Leistungen</a>
 
-        <!-- Dropdown für Energetische Sanierungen -->
-        <div class="dropdown">
-            <a class="dropbtn">Energetische Sanierungen ▼</a>
-            <div class="dropdown-content">
-                <a routerLink="/sanierungen/Dachsanierung">Dachsanierung</a>
-                <a routerLink="/sanierungen/Wärmepumpe">Wärmepumpe</a>
-                <a routerLink="/sanierungen/Photovoltaik">Photovoltaik</a>
-            </div>
-        </div>
-
-        <a routerLink="/about">Über uns</a>
-        <a routerLink="/Kontakt">Kontakt</a>
-    </nav>
-
-    <div class="cta">
-        <button class="cta-button">Angebot anfordern</button>
-    </div>
-</header>
 
 <!-- Hier wird der Routeninhalt geladen -->
 <router-outlet></router-outlet>

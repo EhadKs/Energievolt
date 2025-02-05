@@ -1,41 +1,33 @@
-<div class="wrapper">
-    <nav class="sidebar">
-        <ul>
-            <li><a href="#" class="active" onclick="changeContent('photovoltaik')">Photovoltaik</a></li>
-            <li><a href="#" onclick="changeContent('elektroinstallation')">Elektroinstallation</a></li>
-            <li><a href="#" onclick="changeContent('reparaturservice')">Reparaturservice</a></li>
-            <li><a href="#" onclick="changeContent('nachruestungen')">Nachrüstungen</a></li>
-            <li><a href="#" onclick="changeContent('dachsanierung')">Dachsanierung</a></li>
-        </ul>
-    </nav>
-    <div class="content-area">
-        <h1 class="section-title">Unsere Leistungen</h1>
-        <div class="content" id="main-content">
-            <p>Wählen Sie eine Kategorie in der Sidebar, um mehr zu erfahren.</p>
+<div class="contact-section">
+    <div class="map-container">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5332.67797339847!2d11.647002077014731!3d48.06509937123567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479de0bf91974b67%3A0xd8822c4ea90c70c4!2sSiemensstra%C3%9Fe%2020%2C%2085521%20Ottobrunn!5e0!3m2!1sde!2sde!4v1738704488328!5m2!1sde!2sde" 
+        width="100%" height="100%" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <h2>Kontaktieren Sie uns</h2>
+            <p>Haben Sie Fragen oder benötigen eine Beratung? Unser Team hilft Ihnen gerne weiter.</p>
+            <p><strong>Adresse:</strong><br>Siemensstraße 20, 85521 Ottobrunn, Deutschland</p>
+            <p><strong>Telefon:</strong><br>+49 89 12345678</p>
+            <p><strong>E-Mail:</strong><br><a href="mailto:info@energivolt.de">info#64energivolt.de</a></p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Schreiben Sie uns</h2>
+            <form>
+                <input type="text" placeholder="Ihr Name*" required>
+                <input type="email" placeholder="Ihre E-Mail*" required>
+                <textarea placeholder="Ihre Nachricht*" required></textarea>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy">Ich akzeptiere die <a href="#">Datenschutzerklärung</a></label>
+                </div>
+
+                <button type="submit">Nachricht senden</button>
+            </form>
         </div>
     </div>
 </div>
-<script>
-    function changeContent(section) {
-        let content = document.getElementById("main-content");
-        switch (section) {
-            case 'photovoltaik':
-                content.innerHTML = '<h2>Photovoltaik</h2><p>Erneuerbare Energien für eine nachhaltige Zukunft.</p>';
-                break;
-            case 'elektroinstallation':
-                content.innerHTML = '<h2>Elektroinstallation</h2><p>Professionelle Lösungen für Ihre elektrischen Systeme.</p>';
-                break;
-            case 'reparaturservice':
-                content.innerHTML = '<h2>Reparaturservice</h2><p>Schnelle und effiziente Reparaturen für Ihr Zuhause.</p>';
-                break;
-            case 'nachruestungen':
-                content.innerHTML = '<h2>Nachrüstungen</h2><p>Moderne Technologien für Ihre bestehenden Systeme.</p>';
-                break;
-            case 'dachsanierung':
-                content.innerHTML = '<h2>Dachsanierung</h2><p>Schutz und Werterhalt Ihrer Immobilie.</p>';
-                break;
-            default:
-                content.innerHTML = '<p>Wählen Sie eine Kategorie in der Sidebar, um mehr zu erfahren.</p>';
-        }
-    }
-</script>
