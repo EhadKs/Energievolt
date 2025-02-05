@@ -1,14 +1,21 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { LeistungenComponent } from './components/Leistungen/leistungen.component';
 import { KontaktComponent } from './components/Kontakt/Kontakt.component';
-import { LeistungenComponent } from './components/leistungen/leistungen.component';
-import { SanierungenComponent } from './components/sanierungen/sanierungen.component';
 import { AboutComponent } from './components/about/about.component';
 
+
 export const routes: Routes = [
-  { path: '', component: HomeComponent },  // ✅ Startseite als Standard
-  { path: 'leistungen', component: LeistungenComponent },
-  { path: 'sanierungen', component: SanierungenComponent },
-  { path: 'about', component: AboutComponent },
+  { path: '', component: HomeComponent },
+  { path: 'Leistungen', component: LeistungenComponent},
   { path: 'kontakt', component: KontaktComponent },
+  { path: 'about', component: AboutComponent },
+  
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}

@@ -1,0 +1,67 @@
+/* Container für das gesamte Layout */
+.leistungen-container {
+    display: flex;
+    height: calc(100vh - 60px); /* Volle Höhe, aber abzüglich des Headers */
+    margin-top: 60px; /* Höhe des Headers ausgleichen */
+}
+
+/* Sidebar: Fixiert links & nimmt immer die ganze Höhe */
+.side-nav {
+    width: 250px;
+    background: #270c49;
+    color: white;
+    padding: 50px;
+    position: fixed;
+    top: 60px; /* Direkt unter dem Header */
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+/* Sidebar-Navigation */
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav ul li {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.side-nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav ul li a:hover,
+.side-nav ul li a.active {
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 4px solid white;
+    padding-left: 10px;
+}
+
+/* Hauptinhalt, um Platz für die Sidebar zu lassen */
+.content-area {
+    margin-left: 280px; /* Mehr Abstand von der Sidebar */
+    padding: 80px;
+    flex: 1;
+    overflow: auto;
+    min-height: calc(100vh - 60px);
+    background: white;
+}
+
+
+/* Bilder fixen: Falls sie nicht laden */
+.content img {
+    width: 100%;
+    max-width: 600px; /* Verhindert, dass sie zu groß werden */
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    background-color: #ccc; /* Falls das Bild nicht geladen wird */
+}

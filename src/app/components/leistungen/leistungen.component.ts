@@ -2,8 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-leistungen',
-  standalone: true,
-  template: `<h2>Leistungen</h2><p>Hier stehen die Leistungen.</p>`,
-  styleUrls: ['./leistungen.component.scss']
+  imports: [],
+  templateUrl: './leistungen.component.html',
+  styleUrls: [ './leistungen.component.css']
 })
-export class LeistungenComponent { }
+export class LeistungenComponent { 
+  constructor() {
+    console.log('LeistungenComponent geladen');
+  }
+
+
+}

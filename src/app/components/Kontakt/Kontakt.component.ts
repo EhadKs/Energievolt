@@ -5,8 +5,8 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-contact',
   standalone: true,  // ✅ Wichtige Standalone-Komponente
   imports: [FormsModule],  // ✅ FormsModule für ngModel hinzufügen
-  templateUrl: './kontakt.component.html',
-  styleUrls: ['./kontakt.component.scss']
+  templateUrl: './Kontakt.component.html',
+  styleUrls: ['./Kontakt.component.css']
 })
 export class KontaktComponent {
   contactForm = { name: '', email: '', message: '' };
