@@ -1,38 +1,41 @@
+/* HERO SECTION */
 .hero {
   width: 100%;
-  height: 100vh; /* Hero-Bild nimmt volle Bildschirmhöhe ein */
+  height: 100vh; /* Volle Bildschirmhöhe */
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .hero img {
   width: 100%;
   height: 850px;
-  object-fit: cover; /* Sorgt dafür, dass das Bild immer gut aussieht */
+  object-fit: cover; /* Kein Verzerren */
   display: block;
 }
+
 .service-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px; /* Mehr Abstand zwischen den Bildern */
   flex-wrap: wrap;
   position: absolute;
-  width: 100%;
-  top: 110%;  /* Erhöhe den Wert, damit die Bilder weiter nach unten wandern */
+  top: 105%;  /* Weiter nach unten verschoben */
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 70%; /* Breiter, damit die Bilder größer werden können */
+  max-width: 1300px;
+  z-index: 10;
 }
 
-
-
 .service-card {
-  width: 23%; /* Anpassung der Breite */
-  max-width: 350px;
+  width: 23%; /* Größer als vorher */
+  max-width: 400px; /* Maximale Breite erhöht */
   background: white;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px; /* Weichere Ecken */
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
@@ -45,51 +48,200 @@
   object-fit: cover;
 }
 
-
-/* Text-Effekt nur beim Hover */
+/* Text nur sichtbar, wenn man über das Bild geht */
 .service-card .service-info {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 15px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7); /* Dunkler für bessere Lesbarkeit */
   color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   opacity: 0;
   transform: translateY(100%);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover-Effekt */
 .service-card:hover .service-info {
   opacity: 1;
   transform: translateY(0);
 }
 
+/* Hover-Effekt */
 .service-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.07);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-.service-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 100px; /* Fügt Platz für den nächsten Abschnitt hinzu */
+/* FOUR-STEPS SECTION */
+.four-steps-section {
+  width: 80%;
+  margin: 150px auto 50px auto;
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 100px;
+  border-radius: 10px;
 }
 
+.four-steps-section h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1c0757;
+  margin-bottom: 10px;
+}
+
+.four-steps-section p {
+  font-size: 25px;
+  color: #1c0757;
+  margin-bottom: 40px;
+}
+
+/* STEPS CONTAINER */
 .steps-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin-top: 300px; /* Hier weiter erhöhen, falls noch weiter runter */
   position: relative;
-  z-index: 2;
-  filter: hue-rotate(240deg) saturate(200%);
-    margin-bottom: 80px; /* Mehr Abstand zum Footer */
+}
 
+.step-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+}
+
+/* VERSCHOBENE BOXEN LINKS UND RECHTS */
+.step-row.left {
+  justify-content: flex-start;
+}
+
+.step-row.right {
+  justify-content: flex-end;
+}
+
+.step-box {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #28075e, #0a0116);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  position: relative;
+}
+
+/* BILDER DER SCHRITTE */
+.step-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* NUMMERNKREIS */
+.step-number {
+  background: #fbfbfc;
+  color: rgb(2, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
+  margin-right: 15px;
+}
+
+/* TEXT-INHALT */
+.step-content {
+  text-align: left;
+}
+
+.step-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: #fdfbfb;
+}
+
+.step-content p {
+  font-size: 18px;
+  margin: 5px 0 0 0;
+  color: #fffefe;
+}
+
+/* PFEILE (VERBINDUNGSLINIEN) */
+.step-connector {
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background: #4c00ff;
+}
+
+.step-row.left .step-connector {
+  right: -70px;
+}
+
+.step-row.right .step-connector {
+  left: -70px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .service-container {
+    top: 90%;
+    width: 90%;
+  }
+  .service-card {
+    width: 45%;
+  }
+  .step-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .step-box {
+    max-width: 90%;
+    text-align: center;
+  }
+  .step-image {
+    margin: 0 auto 10px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-container {
+    top: 95%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .service-card {
+    width: 48%;
+  }
+  .four-steps-section {
+    padding: 50px;
+  }
+  .step-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .service-card {
+    width: 90%;
+  }
+  .step-image {
+    width: 150px;
+    height: 150px;
+  }
 }

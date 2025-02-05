@@ -37,7 +37,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 80px; 
-    background: linear-gradient(135deg, #750cc0, #2e054b); /* Lila Verlauf */
+    background: linear-gradient(135deg, #28075e, #0a0116); /* Lila Verlauf */
     display: flex;
     justify-content: space-between;
     align-items: center;

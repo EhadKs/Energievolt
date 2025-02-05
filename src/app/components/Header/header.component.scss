@@ -11,12 +11,11 @@
 
 /* Logo */
 .logo img {
-  height: 40px; /* Kleinere Höhe für das Logo */
-  width: auto;  /* Beibehaltung des Seitenverhältnisses */
+  height: 60px; /* Kleinere Höhe für das Logo */
+  width: 230px;  /* Beibehaltung des Seitenverhältnisses */
   margin-left: 20px; /* Abstand vom linken Rand */
   display: block;
-  filter: hue-rotate(240deg) saturate(200%);
-  
+    filter: hue-rotate(240deg) saturate(200%);
 }
 
 /* Navigationslinks */
