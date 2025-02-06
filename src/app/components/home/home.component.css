@@ -245,3 +245,90 @@
     height: 150px;
   }
 }
+
+
+/* Animationen für die Boxen */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.step-box {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.step-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.step-row:nth-child(even) .step-box {
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.step-row:nth-child(odd) .step-box {
+  animation: slideInRight 1s ease-in-out forwards;
+}
+
+.step-number {
+  animation: glow 2s infinite ease-in-out;
+}
+
+/* Linienanimation */
+@keyframes drawLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 120px;
+  }
+}
+
+.step-connector {
+  animation: drawLine 1.5s ease-in-out forwards;
+}
+

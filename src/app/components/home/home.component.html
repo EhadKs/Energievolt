@@ -37,8 +37,7 @@
 </div>
 
 <section class="four-steps-section">
-  <h2>In 4 Schritten</h2>
-  <p>Unser Expertenteam begleitet zuverlässig Ihre Solaranlage und durchläuft mit Ihnen gemeinsam 4 Schritte, bis Ihre Photovoltaikanlage in Betrieb genommen wird.</p>
+  <h2>Ihr Weg zur nachhaltigen Energie</h2>
 
   <div class="steps-container">
       <!-- Schritt 1 -->
@@ -94,4 +93,31 @@
       </div>
   </div>
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const stepBoxes = document.querySelectorAll(".step-box");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible"); // Animation starten
+        } else {
+          entry.target.classList.remove("visible"); // Entferne Klasse, damit es erneut animiert wird
+        }
+      });
+    },
+    {
+      root: null,
+      threshold: 0.3, // 30% des Elements müssen sichtbar sein
+    }
+  );
+
+  stepBoxes.forEach((box) => observer.observe(box));
+});
+
+
+
+
+</script>
 
