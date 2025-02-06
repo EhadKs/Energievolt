@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to right, #450085, #7a3cff);
+    background:  linear-gradient(135deg, #28075e, #0a0116); 
     padding: 50px;
     border-radius: 10px;
     margin: 40px 0;
