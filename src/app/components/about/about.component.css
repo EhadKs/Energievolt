@@ -1,3 +1,4 @@
+/* General Styling */
 .about-container {
     width: 80%;
     margin: auto;
@@ -9,15 +10,17 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.intro {
+/* Hero Section */
+.hero {
     background: linear-gradient(to right, #450085, #7a3cff);
     color: white;
-    padding: 50px 20px;
+    padding: 80px 20px;
     border-radius: 10px;
+    text-align: center;
 }
 
-.intro h1 {
-    font-size: 2.5rem;
+.hero h1 {
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -25,23 +28,38 @@
     color: #ffd700;
 }
 
-.mission, .team, .promise {
+/* Flexbox Layout für Sektionen */
+.mission, .team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #450085, #7a3cff);
+    padding: 50px;
+    border-radius: 10px;
+    margin: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.promise {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #f8f6ff;
-    padding: 40px;
+    padding: 50px;
     border-radius: 10px;
     margin: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .mission-text, .team-text {
-    width: 48%;
+    width: 50%;
     text-align: left;
+    padding: 20px;
+    color: white;
 }
 
 .mission-image, .team-image {
-    width: 48%;
+    width: 30%;
 }
 
 .mission-image img, .team-image img {
@@ -49,51 +67,144 @@
     border-radius: 10px;
 }
 
+/* Werte Section */
 .values {
-    background: white;
-    padding: 50px 0;
+    background: #f8f6ff;
+    padding: 60px 0;
 }
 
-.values-container, .promise-container {
+.values-container {
     display: flex;
     justify-content: space-around;
     text-align: center;
     margin-top: 20px;
-    gap: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.value-box, .promise-box {
+/* Werte-Boxen */
+.value-box {
     background: #f8f6ff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 12px;
     width: 30%;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.value-box:hover, .promise-box:hover {
-    transform: scale(1.05);
-}
-
+/* Bilder der Werte verkleinern */
 .value-box img {
-    width: 80px;
+    width: 80px; /* Reduziere die Größe */
+    height: auto;
     margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* BESSERE SCHRIFT-FARBE & SICHTBARKEIT */
-.mission-text h2, .team-text h2, .promise h2, .values h2 {
-    color: #1a005e;
-    font-size: 2rem;
-    font-weight: bold;
+/* Hover-Effekt */
+.value-box:hover img {
+    transform: scale(1.1);
 }
 
-.mission-text p, .team-text p, .promise p, .values p {
-    color: #333;
-    font-size: 1rem;
+/* Standardmäßiger Text unsichtbar */
+.value-box p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
+/* Hover-Effekt: Text erscheint */
+.value-box:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Box hebt sich leicht an */
+.value-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Dunklerer Hintergrund beim Hover */
+.value-box:hover {
+    background: #e6e1ff;
+}
+
+/* Unser Versprechen */
+.promise-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.promise-box {
+    background: #f8f6ff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 30%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promise-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Standardmäßiger Text unsichtbar */
+.promise-box p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Hover-Effekt: Text erscheint */
+.promise-box:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animationen */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Standardmäßig ausgeblendet */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Sobald sichtbar */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
     .mission, .team, .promise {
         flex-direction: column;
         text-align: center;
@@ -101,6 +212,7 @@
 
     .mission-text, .team-text {
         width: 100%;
+        text-align: center;
     }
 
     .mission-image, .team-image {
