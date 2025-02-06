@@ -1,3 +1,14 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+/* Entfernt Abstand zwischen Header und Hero */
+header {
+    margin: 0;
+    padding: 0;
+}
+
 /* General Styling */
 .about-container {
     width: 80%;
@@ -12,11 +23,11 @@
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #450085, #7a3cff);
-    color: white;
+    margin: 0;
     padding: 80px 20px;
-    border-radius: 10px;
-    text-align: center;
+    border-radius: 0;
+    position: relative;
+    top: 0;
 }
 
 .hero h1 {
@@ -33,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:  linear-gradient(135deg, #28075e, #0a0116); 
+    background: linear-gradient(135deg, #28075e, #0a0116); 
     padding: 50px;
     border-radius: 10px;
     margin: 40px 0;
