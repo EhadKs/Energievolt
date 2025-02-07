@@ -1,41 +1,43 @@
 <div class="wrapper">
     <nav class="sidebar">
-        <ul>
-            <li><a href="#" class="active" onclick="changeContent('photovoltaik')">Photovoltaik</a></li>
-            <li><a href="#" onclick="changeContent('elektroinstallation')">Elektroinstallation</a></li>
-            <li><a href="#" onclick="changeContent('reparaturservice')">Reparaturservice</a></li>
-            <li><a href="#" onclick="changeContent('nachruestungen')">Nachrüstungen</a></li>
-            <li><a href="#" onclick="changeContent('dachsanierung')">Dachsanierung</a></li>
-        </ul>
+      <ul>
+        <li><button (click)="changeSection('photovoltaik')">Photovoltaik</button></li>
+        <li><button (click)="changeSection('elektroinstallation')">Elektroinstallation</button></li>
+        <li><button (click)="changeSection('reparaturservice')">Reparaturservice</button></li>
+        <li><button (click)="changeSection('nachruestungen')">Nachrüstungen</button></li>
+        <li><button (click)="changeSection('dachsanierung')">Dachsanierung</button></li>
+      </ul>
     </nav>
+
+
     <div class="content-area">
         <h1 class="section-title">Unsere Leistungen</h1>
         <div class="content" id="main-content">
-            <p>Wählen Sie eine Kategorie in der Sidebar, um mehr zu erfahren.</p>
+          <div [ngSwitch]="section">
+            <div *ngSwitchCase="'photovoltaik'">
+              <h2>Photovoltaik</h2>
+              <p>Erneuerbare Energien für eine nachhaltige Zukunft.</p>
+            </div>
+            <div *ngSwitchCase="'elektroinstallation'">
+              <h2>Elektroinstallation</h2>
+              <p>Professionelle Lösungen für Ihre elektrischen Systeme.</p>
+            </div>
+            <div *ngSwitchCase="'reparaturservice'">
+              <h2>Reparaturservice</h2>
+              <p>Schnelle und effiziente Reparaturen für Ihr Zuhause.</p>
+            </div>
+            <div *ngSwitchCase="'nachruestungen'">
+              <h2>Nachrüstungen</h2>
+              <p>Moderne Technologien für Ihre bestehenden Systeme.</p>
+            </div>
+            <div *ngSwitchCase="'dachsanierung'">
+              <h2>Dachsanierung</h2>
+              <p>Schutz und Werterhalt Ihrer Immobilie.</p>
+              <h1>Funktioniert</h1>
+            </div>
+            <div *ngSwitchDefault>
+              <p>Bitte wähle eine Kategorie aus der Sidebar.</p>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-<script>
-    function changeContent(section) {
-        let content = document.getElementById("main-content");
-        switch (section) {
-            case 'photovoltaik':
-                content.innerHTML = '<h2>Photovoltaik</h2><p>Erneuerbare Energien für eine nachhaltige Zukunft.</p>';
-                break;
-            case 'elektroinstallation':
-                content.innerHTML = '<h2>Elektroinstallation</h2><p>Professionelle Lösungen für Ihre elektrischen Systeme.</p>';
-                break;
-            case 'reparaturservice':
-                content.innerHTML = '<h2>Reparaturservice</h2><p>Schnelle und effiziente Reparaturen für Ihr Zuhause.</p>';
-                break;
-            case 'nachruestungen':
-                content.innerHTML = '<h2>Nachrüstungen</h2><p>Moderne Technologien für Ihre bestehenden Systeme.</p>';
-                break;
-            case 'dachsanierung':
-                content.innerHTML = '<h2>Dachsanierung</h2><p>Schutz und Werterhalt Ihrer Immobilie.</p>';
-                break;
-            default:
-                content.innerHTML = '<p>Wählen Sie eine Kategorie in der Sidebar, um mehr zu erfahren.</p>';
-        }
-    }
-</script>
+      </div>
