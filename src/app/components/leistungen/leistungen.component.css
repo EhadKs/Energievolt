@@ -1,233 +1,82 @@
-/* General Styling */
-.about-container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+/* Grundlegendes Styling */
+.services {
+    width: 80%;
+    margin: auto;
     text-align: center;
-    color: #1a005e;
-    background: white;
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(to right, #450085, #7a3cff);
-    color: white;
-    padding: 50px 20px;
-    border-radius: 0; /* Entfernt die Abrundung */
-    margin-bottom: -5px; /* Verbindet mit dem nächsten Abschnitt */
-}
-
-/* Überschrift */
-.hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.highlight {
-    color: #ffd700;
-}
-
-/* Entfernt unnötige Abstände zwischen Sektionen */
-section {
-    margin: 0;
-    padding: 0;
-}
-
-/* Verbindung zwischen Abschnitten */
-.mission, .team, .values, .promise, .philosophy {
     padding: 50px 0;
-    margin: 0;
-    width: 100%;
 }
 
-/* Flexbox Layout für Sektionen */
-.mission, .team {
+.services h1 {
+    font-size: 2.5rem;
+    color: #28075e;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Styling für Service-Sektionen */
+.service-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(135deg, #28075e, #0a0116);
-    padding: 50px;
-    border-radius: 0;
-    box-shadow: none;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Philosophie-Sektion */
-.philosophy {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #f8f6ff;
-    padding: 50px;
-    border-radius: 0;
+.service-section:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
-/* Textblöcke */
-.mission-text, .team-text, .philosophy-text {
+.service-text {
     width: 50%;
     text-align: left;
     padding: 20px;
-    color: white;
 }
 
-/* Bilder */
-.mission-image, .team-image {
-    width: 30%;
+.service-text h2 {
+    font-size: 1.8rem;
+    color: #28075e;
 }
 
-.mission-image img, .team-image img {
+.service-text .highlight {
+    color: linear-gradient(135deg, #28075e, #0a0116);
+    font-weight: bold;
+}
+
+.service-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.service-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.service-image img {
     width: 100%;
     border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Werte-Section */
-.values {
-    background: #f8f6ff;
-    padding: 60px 0;
-}
-
-/* Flexbox für Werte */
-.values-container {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 20px;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-/* Werte-Boxen */
-.value-box {
-    background: #f8f6ff;
-    padding: 25px;
-    border-radius: 12px;
-    width: 30%;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Hover-Effekt */
-.value-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    background: #e6e1ff;
-}
-
-/* Bilder der Werte */
-.value-box img {
-    width: 80px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Text erscheint beim Hover */
-.value-box p {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.value-box:hover p {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Philosophie Container */
-.philosophy-container {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 20px;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-/* Philosophie Box */
-.philosophy-box {
-    background: #f8f6ff;
-    padding: 25px;
-    border-radius: 12px;
-    width: 30%;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.philosophy-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Text in Philosophie Boxen */
-.philosophy-box p {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-/* Text erscheint beim Hover */
-.philosophy-box:hover p {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Animationen */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Standardmäßig ausgeblendet */
-.fade-in {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-/* Sobald sichtbar */
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Responsive Design */
+/* Responsives Design */
 @media (max-width: 1024px) {
-    .mission, .team, .promise {
-        flex-direction: column;
+    .service-section {
+        flex-direction: column !important;
         text-align: center;
     }
-
-    .mission-text, .team-text, .philosophy-text {
+    .service-text,
+    .service-image {
         width: 100%;
         text-align: center;
-    }
-
-    .mission-image, .team-image {
-        width: 80%;
-        margin: auto;
-    }
-
-    .values-container, .philosophy-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .value-box, .philosophy-box {
-        width: 80%;
-        margin: auto;
     }
 }

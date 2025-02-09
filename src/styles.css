@@ -36,8 +36,8 @@ body, html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px; 
-    background: linear-gradient(135deg, #28075e, #0a0116); /* Lila Verlauf */
+    height: 50px; 
+    background: white; /* Lila Verlauf */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +62,7 @@ body, html {
 
 /* Navigationselemente */
 .nav-links a {
-    color: white;
+    color: #0a0116;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 500;

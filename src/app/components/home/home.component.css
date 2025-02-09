@@ -1,3 +1,7 @@
+.body{
+  background-color: #0a0116;
+}
+
 /* HERO SECTION */
 .hero {
   width: 100%;
@@ -7,6 +11,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
+  filter: hue-rotate(230deg) saturate(90%);
 }
 
 .hero img {
@@ -25,14 +30,14 @@
   top: 105%;  /* Weiter nach unten verschoben */
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%; /* Breiter, damit die Bilder größer werden können */
-  max-width: 1300px;
+  width: 1600px; /* Breiter, damit die Bilder größer werden können */
+  max-width: 2000px;
   z-index: 10;
 }
 
 .service-card {
   width: 23%; /* Größer als vorher */
-  max-width: 400px; /* Maximale Breite erhöht */
+  max-width: 700px; /* Maximale Breite erhöht */
   background: white;
   border-radius: 20px; /* Weichere Ecken */
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
@@ -57,13 +62,22 @@
   padding: 15px;
   background: rgba(0, 0, 0, 0.7); /* Dunkler für bessere Lesbarkeit */
   color: white;
-  text-align: center;
-  font-size: 20px;
+  
+  font-size: 15px;
   opacity: 0;
   transform: translateY(100%);
   transition: opacity 0.3s ease, transform 0.3s ease;
+  
 }
-
+.service-info h3 {
+  margin-left: 120px;
+}
+.service-info p {
+  margin-left: 20px;
+}
+.service-text {
+  margin-left: 30px;
+}
 .service-card:hover .service-info {
   opacity: 1;
   transform: translateY(0);
@@ -77,7 +91,7 @@
 
 /* FOUR-STEPS SECTION */
 .four-steps-section {
-  width: 80%;
+  width: 100%;
   margin: 150px auto 50px auto;
   text-align: center;
   background-color: #f8f9fa;
@@ -90,6 +104,7 @@
   font-weight: bold;
   color: #1c0757;
   margin-bottom: 10px;
+  margin-left: -200px;
 }
 
 .four-steps-section p {
@@ -117,10 +132,12 @@
 /* VERSCHOBENE BOXEN LINKS UND RECHTS */
 .step-row.left {
   justify-content: flex-start;
+  margin-left: -200px;
 }
 
 .step-row.right {
   justify-content: flex-end;
+  
 }
 
 .step-box {
@@ -129,7 +146,7 @@
   background: linear-gradient(135deg, #28075e, #0a0116);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 500px;
   position: relative;
 }

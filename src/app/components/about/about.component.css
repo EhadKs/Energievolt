@@ -40,7 +40,7 @@ header {
 }
 
 /* Flexbox Layout für Sektionen */
-.mission, .team {
+.mission  {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,30 +50,69 @@ header {
     margin: 40px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.promise {
+.team{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #f8f6ff;
+    background: #f8f8fa; 
+    padding: 50px;
+    border-radius: 10px;
+    margin: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #120227;
+    text-align: center;
+}
+.team-text{
+    color: #28075e;
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+}
+.warum{
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #28075e, #0a0116); 
     padding: 50px;
     border-radius: 10px;
     margin: 40px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.mission-text, .team-text {
+.warum-text{
+    color: #f7f6f8;
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+}
+.promise {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f8fa;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mission-text {
     width: 50%;
     text-align: left;
     padding: 20px;
     color: white;
+    font-size:20px;
 }
 
-.mission-image, .team-image {
+.mission-image, .warum-image  {
     width: 30%;
 }
-
-.mission-image img, .team-image img {
+.team-image{
+width: 30%;
+}
+.mission-image img, .warum-image img, .team-image img {
     width: 100%;
     border-radius: 10px;
 }

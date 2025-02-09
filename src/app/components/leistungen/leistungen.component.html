@@ -1,43 +1,67 @@
-<div class="wrapper">
-    <nav class="sidebar">
-      <ul>
-        <li><button (click)="changeSection('photovoltaik')">Photovoltaik</button></li>
-        <li><button (click)="changeSection('elektroinstallation')">Elektroinstallation</button></li>
-        <li><button (click)="changeSection('reparaturservice')">Reparaturservice</button></li>
-        <li><button (click)="changeSection('nachruestungen')">Nachrüstungen</button></li>
-        <li><button (click)="changeSection('dachsanierung')">Dachsanierung</button></li>
-      </ul>
-    </nav>
+<section class="services">
+    <h1>Unsere Leistungen</h1>
+    <p>Wir bieten umfassende Dienstleistungen im Bereich nachhaltiger Energielösungen.</p>
 
-
-    <div class="content-area">
-        <h1 class="section-title">Unsere Leistungen</h1>
-        <div class="content" id="main-content">
-          <div [ngSwitch]="section">
-            <div *ngSwitchCase="'photovoltaik'">
-              <h2>Photovoltaik</h2>
-              <p>Erneuerbare Energien für eine nachhaltige Zukunft.</p>
-            </div>
-            <div *ngSwitchCase="'elektroinstallation'">
-              <h2>Elektroinstallation</h2>
-              <p>Professionelle Lösungen für Ihre elektrischen Systeme.</p>
-            </div>
-            <div *ngSwitchCase="'reparaturservice'">
-              <h2>Reparaturservice</h2>
-              <p>Schnelle und effiziente Reparaturen für Ihr Zuhause.</p>
-            </div>
-            <div *ngSwitchCase="'nachruestungen'">
-              <h2>Nachrüstungen</h2>
-              <p>Moderne Technologien für Ihre bestehenden Systeme.</p>
-            </div>
-            <div *ngSwitchCase="'dachsanierung'">
-              <h2>Dachsanierung</h2>
-              <p>Schutz und Werterhalt Ihrer Immobilie.</p>
-              <h1>Funktioniert</h1>
-            </div>
-            <div *ngSwitchDefault>
-              <p>Bitte wähle eine Kategorie aus der Sidebar.</p>
-            </div>
-          </div>
+    <div class="service-section">
+        <div class="service-image">
+            <img src="/assets/Image/photovoltaik.jpg" alt="Photovoltaik">
         </div>
-      </div>
+        <div class="service-text">
+            <h2><span class="highlight">Photovoltaik</span> – Saubere Energie direkt vom Dach</h2>
+            <p>
+                Photovoltaik ist eine Schlüsseltechnologie für die Energiewende, da sie Sonnenlicht direkt in Strom umwandelt 
+                und Hausbesitzern ermöglicht, umweltfreundlich und kostengünstig ihren Energiebedarf zu decken.
+            </p>
+        </div>
+    </div>
+
+    <div class="service-section">
+        <div class="service-image">
+            <img src="/assets/Image/dachsanierungen.jpg" alt="Dachsanierung">
+        </div>
+        <div class="service-text">
+            <h2><span class="highlight">Dachsanierung</span> – Nachhaltige Erneuerung</h2>
+            <p>
+                Unsere Dachsanierungsdienstleistungen sorgen für eine energieeffiziente und langlebige Lösung für Ihr Dach.
+            </p>
+        </div>
+    </div>
+
+    <div class="service-section">
+        <div class="service-image">
+            <img src="/assets/Image/waermepumpe.jpg" alt="Wärmepumpe">
+        </div>
+        <div class="service-text">
+            <h2><span class="highlight">Wärmepumpen</span> – Effiziente Heizlösung für Ihr Zuhause</h2>
+            <p>
+                Wärmepumpen sind eine umweltfreundliche und effiziente Heizlösung, die immer beliebter wird.
+            </p>
+        </div>
+        
+    </div>
+
+    <div class="service-section">
+        <div class="service-image">
+            <img src="/assets/Image/reperaturservice.jpg" alt="Reparaturservice">
+        </div>
+        <div class="service-text">
+            <h2><span class="highlight">Reparaturservice</span> – Zuverlässige Wartung</h2>
+            <p>
+                Unser Reparaturservice stellt sicher, dass Ihre Energieanlagen effizient und sicher funktionieren.
+            </p>
+        </div>
+    </div>
+
+    <div class="service-section">
+        <div class="service-image">
+            <img src="/assets/Image/nachruestugen.jpg" alt="Nachrüstung">
+        </div>
+        <div class="service-text">
+            <h2><span class="highlight">Nachrüstung</span> – Optimierung Ihrer Systeme</h2>
+            <p>
+                Wir modernisieren und optimieren bestehende Anlagen, um deren Effizienz und Leistung zu steigern.
+            </p>
+        </div>
+        
+    </div>
+</section>
